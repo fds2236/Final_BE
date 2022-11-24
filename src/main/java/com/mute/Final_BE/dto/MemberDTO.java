@@ -8,7 +8,7 @@ import java.util.Date;
 // 도연 작업중 (수빈, 찬호 같이 쓰세욤)
 @Getter @Setter
 public class MemberDTO {
-    private Integer user_num; // 회원번호
+    private Long user_num; // 회원번호
     private String user_id; // 회원아이디
     private String pwd; // 비밀번호
     private String name; // 이름
