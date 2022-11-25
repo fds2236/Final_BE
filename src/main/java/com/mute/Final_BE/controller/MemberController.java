@@ -3,8 +3,6 @@ import com.mute.Final_BE.service.MemberService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.lang.reflect.Member;
-import java.util.List;
 import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:3000")
