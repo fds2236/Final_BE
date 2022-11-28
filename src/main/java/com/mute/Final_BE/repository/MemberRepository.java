@@ -1,6 +1,6 @@
 package com.mute.Final_BE.repository;
+import com.mute.Final_BE.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
-import java.lang.reflect.Member;
 import java.util.List;
 
 
