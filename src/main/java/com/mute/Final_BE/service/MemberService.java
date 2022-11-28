@@ -1,3 +1,5 @@
+//
+//
 //package com.mute.Final_BE.service;
 //import com.mute.Final_BE.dto.MemberDTO;
 //import com.mute.Final_BE.repository.MemberRepository;
@@ -20,7 +22,7 @@
 //    }
 //    public boolean login(String userId, String pwd) {
 //        List<Member> memberList = memberRepository.findByUserIdAndPwd(userId, pwd);
-//        for(Member info : memberList) {
+//        for(Member e : memberList) {
 //            return true;
 //        }
 //        return false;
@@ -35,12 +37,13 @@
 ////        return
 ////
 ////    }
-//    public MemberDTO getMemberList(String mail) {
-//        Member member = memberRepository.findByMail(mail);
-//        MemberDTO memberDTO = new MemberDTO();
-//        memberDTO.setUser_id(member.getUser_id);
-//        return memberDTO;
-//    }
+////    public MemberDTO getMemberList(String mail) {
+////        Member member = memberRepository.findByMail(name, mail);
+////        MemberDTO memberDTO = new MemberDTO();
+////        memberDTO.setName(member.getName);
+////        memberDTO.setMail(member.getMail);
+////        return memberDTO;
+////    }
 //
 //
 //}
