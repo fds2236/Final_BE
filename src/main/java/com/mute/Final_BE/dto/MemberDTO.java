@@ -1,8 +1,6 @@
 package com.mute.Final_BE.dto;
-
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.Date;
 
 // 도연 작업중 (수빈, 찬호 확인해주세요)

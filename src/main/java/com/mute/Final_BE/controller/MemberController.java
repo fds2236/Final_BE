@@ -23,7 +23,7 @@
 //    public ResponseEntity<Boolean> memberLogin(@RequestBody Map<String, String> loginData) {
 //        String user_id = loginData.get("user_id");
 //        String pwd = loginData.get("pwd");
-//        boolean result = memberService.login(user_id, pwd);
+//        boolean result = memberService.login(userId, pwd);
 //        if (result) {
 //            return new ResponseEntity(true, HttpStatus.OK);
 //        } else {
