@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Seats {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long index; // pk부여를 위한 인덱스
+    private Long indexNum; // pk부여를 위한 인덱스
 
     @ManyToOne // 하나의 공연장은 여러개의 좌석을 갖고 있음
     @JoinColumn(name = "theater_id")

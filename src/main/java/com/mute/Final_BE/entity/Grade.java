@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Grade {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long index; // pk부여를 위한 인덱스
+    private Long indexNum; // pk부여를 위한 인덱스
 
     @OneToOne // 하나의 공연장에
     @JoinColumn(name = "theater_id")
