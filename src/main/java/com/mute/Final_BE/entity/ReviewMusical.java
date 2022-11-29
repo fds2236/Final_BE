@@ -17,7 +17,7 @@ public class ReviewMusical {
     @JoinColumn(name = "musical_id")
     private Musical musical; // 공연 ID
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "user_num")
     private Member member; // 회원번호
 

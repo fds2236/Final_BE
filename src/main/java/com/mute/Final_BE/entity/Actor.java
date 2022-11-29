@@ -13,7 +13,7 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long indexNum; // PK
-    @OneToOne // Musical 엔티티와 일대일 매핑
+    @ManyToOne // Musical 엔티티와 일대일 매핑
     @JoinColumn(name = "musical_id")// 공연 ID(FK)
     private Musical musical; // Member 객체
     private String actorImage; // 배우 이미지

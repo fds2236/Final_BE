@@ -13,15 +13,15 @@ public class ReviewSeat {
     @GeneratedValue
     private Long reviewSeId; // 좌석후기 글 번호
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "musical_id")
     private Musical musical; // 공연 ID
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "theater_id")
     private Theater theater; // 공연장 ID
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "user_num")
     private Member member; // 회원 번호
 

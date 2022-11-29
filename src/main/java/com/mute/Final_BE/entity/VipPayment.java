@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class VipPayment {
     @Id
     @GeneratedValue
-    private Long indexNum;
+    private Long indexNum; // pk부여를 위한 인덱스
     @OneToOne
     @JoinColumn(name = "payment_id") //결제번호(FK)
     private Payment payment;

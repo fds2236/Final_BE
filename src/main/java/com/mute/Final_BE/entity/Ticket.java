@@ -14,10 +14,10 @@ public class Ticket {
     @Id
     @GeneratedValue
     private Long ticketId; // 예매 번호(PK)
-    @OneToOne // Musical 엔티티와 일대일 매핑
+    @ManyToOne
     @JoinColumn(name = "musical_id") // 공연 ID(FK)
     private Musical musical;
-    @OneToOne // Member 엔티티와 일대일 매핑
+    @ManyToOne
     @JoinColumn(name = "user_num") // 회원번호(FK)
     private Member member; // Member 객체
     @OneToOne // Payment 엔티티와 일대일 매핑

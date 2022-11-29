@@ -14,7 +14,7 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId; // 결제번호(PK)
-    @OneToOne // Member 엔티티와 일대일 매핑
+    @ManyToOne
     @JoinColumn(name = "user_num")// 회원번호(FK)
     private Member member; // Member 객체
     private String paymentType; // 결제 수단
