@@ -30,16 +30,5 @@ public class MemberController {
         }
     }
 
-    //아이디 찾기 - 도연
-//    @RequestMapping("/GetMember")
-//    public String findId(@RequestParam("name") String name, @RequestParam("mail") String mail) {
-//        String result = memberService.findId(name, mail);
-//        return result;
-//    }
-//    public ResponseEntity<List<MemberDTO>> memberList(@RequestParam String mail) {
-//        MemberDTO memberDTO = memberService.getMemberList(mail);
-//        return new ResponseEntity<>(memberDTO,
-//
-//    }
 }
 

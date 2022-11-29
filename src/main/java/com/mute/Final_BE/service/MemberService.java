@@ -26,22 +26,4 @@ public class MemberService {
         return false;
     }
 
-    // 아이디 찾기 - 도연
-//    public String findId(String name, String mail) {
-//        List<Member> memberList = memberRepository.findByMail(name, mail);
-//        for(Member info : memberList) {
-//            return result;
-//        }
-//        return
-//
-//    }
-//    public MemberDTO getMemberList(String mail) {
-//        Member member = memberRepository.findByMail(name, mail);
-//        MemberDTO memberDTO = new MemberDTO();
-//        memberDTO.setName(member.getName);
-//        memberDTO.setMail(member.getMail);
-//        return memberDTO;
-//    }
-
-
 }
