@@ -3,7 +3,7 @@ import lombok.Getter;
 import lombok.Setter;
 import java.util.Date;
 
-// 도연 작업중 (수빈, 찬호 확인해주세요)
+// 도연 작업완료 (수빈이 확인해주세요)
 @Getter @Setter
 public class MemberDTO {
 //    private Long userNum; // 회원번호

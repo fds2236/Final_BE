@@ -1,13 +1,10 @@
 package com.mute.Final_BE.service;
-import com.mute.Final_BE.dto.MemberDTO;
 import com.mute.Final_BE.entity.Member;
 import com.mute.Final_BE.repository.MemberRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
-
 
 // 로그인 - 도연
 @Service
@@ -18,12 +15,15 @@ public class MemberService {
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-    public boolean loginCheck(String userId, String pwd) {
-        List<Member> memberList = memberRepository.findByUserIdAndPwd(userId, pwd);
-        for(Member info : memberList) {
-            return true;
-        }
-        return false;
-    }
+    public Integer loginCheck(String userId, String pwd) {
+        System.out.println("here is loginCheck");
+        System.out.println("In Service, id/pwd : "+ userId + pwd);
+        List<Member> memberCheckedList = memberRepository.findByUserIdAndPwd(userId, pwd);
+        List<Member> memberExistList = memberRepository.findByUserId(userId);
 
+        System.out.println("test33"+memberCheckedList + memberCheckedList.size() + memberExistList.size() );
+        if(memberCheckedList.size() != 0 ) {return 200;}
+        else if (memberExistList.size() != 0) {return 300;}
+        else {return 400;}
+    }
 }
