@@ -3,7 +3,7 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-// 도연 작업완료 (수빈이 확인해주세요)
+// 도연 작업완료
 @Data
 @Entity
 @Table(name="member")
