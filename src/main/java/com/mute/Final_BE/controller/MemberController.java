@@ -7,7 +7,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/member")
 public class MemberController {
-    // 로그인 - 도연
+    // 로그인 - 도연 작업완료
     private MemberService memberService;
     public MemberController(MemberService memberService) {
         this.memberService = memberService;

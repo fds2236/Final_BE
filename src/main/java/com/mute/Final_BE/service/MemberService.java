@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 
-// 로그인 - 도연
+// 로그인 - 도연 작업완료
 @Service
 @Transactional
 @Slf4j
