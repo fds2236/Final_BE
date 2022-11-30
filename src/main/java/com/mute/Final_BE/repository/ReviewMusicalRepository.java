@@ -7,5 +7,5 @@ import java.util.List;
 // 도연 - 뮤지컬 리뷰 작업중..
 
 public interface ReviewMusicalRepository extends JpaRepository<ReviewMusical, Long> {
-//    List<ReviewMusical> findById()
+
 }
