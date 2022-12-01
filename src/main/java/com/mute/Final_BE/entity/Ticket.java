@@ -27,4 +27,5 @@ public class Ticket {
     private Date seeDate; // 공연 관람일
     private Date seeTime; // 공연 관람시간
     private int seatNum; // 좌석 번호
+    private String seatPosition; // 예매한 좌석 위치
 }
