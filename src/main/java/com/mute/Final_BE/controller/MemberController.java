@@ -1,6 +1,12 @@
 package com.mute.Final_BE.controller;
+import com.mute.Final_BE.dto.MemberDTO;
+import com.mute.Final_BE.entity.Member;
 import com.mute.Final_BE.service.MemberService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -19,6 +25,28 @@ public class MemberController {
         System.out.println("아이디 패스워드 확인 : "+userId + " " + pwd);
         Integer result = memberService.loginCheck(userId, pwd);
         return result;
+    }
+
+    // 회원가입
+    @PostMapping("/signup")
+    public ResponseEntity<Map<String, String>> signup(@RequestBody Map<String, String> signupData) {
+        String userId = signupData.get("userId");
+        String pwd = signupData.get("pwd");
+        String name = signupData.get("name");
+        String phone = signupData.get("phone");
+        String mail = signupData.get("mail");
+        boolean result = memberService.signup(userId, pwd, name, phone, mail);
+        if(result) {
+            return new ResponseEntity(true, HttpStatus.OK);
+        } else {
+            return new ResponseEntity(false, HttpStatus.BAD_REQUEST);
+        }
+    }
+    // 회원정보 전체 조회
+    @GetMapping("/list")
+    public ResponseEntity<List<MemberDTO>> memberList() {
+        List<MemberDTO> list = memberService.getMemberList();
+        return new ResponseEntity(list, HttpStatus.OK);
     }
 }
 
