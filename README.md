@@ -18,8 +18,8 @@ SpringBoot + React 뮤지컬 정보 및 예매 사이트
 - OS : Window 10, macOS Monterey 12.6
 - IDE : VS Code, IntelliJ
 - Build : Gradle
-- Language : Java11, Javascript
-- FrontEnd : HTML, CSS(Bootstrap)
+- Language : Java11, Javascript ES6
+- FrontEnd : HTML5, CSS(Bootstrap)
 - Library : ReactJS, Spring Data JPA
 - DB : MySQL(DBeaver)
 - Server : Tomcat9.0
