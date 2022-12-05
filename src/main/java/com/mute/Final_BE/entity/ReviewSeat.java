@@ -1,7 +1,6 @@
 package com.mute.Final_BE.entity;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -24,7 +23,6 @@ public class ReviewSeat {
     @ManyToOne
     @JoinColumn(name = "user_num")
     private Member member; // 회원 번호
-
     private int seatNum; // 좌석번호
     private LocalDateTime writeDate; // 작성일
     private int scoreSeat; // 좌석 별점

@@ -21,6 +21,6 @@ public class Wish {
     @ManyToOne // Musical 엔티티와 일대일 매핑
     @JoinColumn(name = "musical_id") // 공연 ID(FK)
     private Musical musical;
-
+    @Enumerated(EnumType.STRING)
     private AlarmStatus alarmStatus; // 알림(Enum)
 }

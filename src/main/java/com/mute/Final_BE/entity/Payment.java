@@ -21,6 +21,7 @@ public class Payment {
     private int paymentPrice; // 결제 가격
     private int paymentSale; // 할인 금액
     private int paymentTotal; // 최종 금액
+    @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus; // 결제 상태(Enum)
     private LocalDateTime paymentDate; // 결제 일시
     private LocalDateTime refundDate; // 환불 일시
